@@ -335,22 +335,6 @@ header .logo img{
     }
     
 }
-
-/*
-#home .intro .hiji #spe h1{
-    background-color: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #000;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-}*/
-
 #home .intro .buttonji{
     width: 100%;
     height: 29%;
@@ -372,6 +356,25 @@ header .logo img{
     position: relative;
     overflow: hidden;
 }
+#home .image h1{
+    height: 0px;
+    width: 0px;
+    background-color: transparent;
+    position: absolute;
+    left: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    overflow: hidden;
+}
+#home .image:hover h1{
+    height: auto;
+    width: 150px;
+    background-color: transparent;
+    position: absolute;
+    left: 10px;
+}
 #home .image img{
     position: absolute;
     bottom: 0px;
@@ -383,7 +386,51 @@ header .logo img{
 #about{
     width: 100vw;
     height: auto;
-    background-color: red;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+#about .welline{
+    width: 100vw;
+    height: 60px;
+    background-image: url(backgreen.webp);
+    background-size: cover;
+    background-position: center;
+    border: 10px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    gap: 0;
+}
+#about .welline .weli{
+position: absolute;
+top: 0;
+left: 100%;
+width: 350px;
+height: 100%;
+background-color: red;
+animation: run 8s linear infinite;
+animation-delay: calc((8s / 4 * (var(--position) - 1)));
+}
+#about .welline .weli h1{
+    height: 100%; 
+    width: 100%;  
+    font-family: "Smooch Sans", sans-serif;
+    font-size: 35px;
+    font-weight: 600;   
+}
+@keyframes run {
+    from{
+        left: 100%;
+    }
+    to{
+        left: calc(350px * -1);
+    }
 }
 /*THE ABOUT SECTION IS DONE*/
 
@@ -401,6 +448,12 @@ THE RESPONSIVE TO 320
     #home .intro .hiji #mehu{
         display: none;
     }
+    #home .image h1{
+        display: none;
+    }
+    #about .welline .weli{
+        animation-delay: calc((8s / 1 * (var(--position) - 1)));
+    }
 }
 /*------------------
 THE RESPONSIVE TO 320
@@ -416,7 +469,13 @@ THE RESPONSIVE TO 768
 #home .intro .hiji #mehu{
     display: none;
 }
+#home .image h1{
+    display: none;
+}
 /*THE HOME SECTION IS DONE*/
+#about .welline .weli{
+    animation-delay: calc((8s / 2 * (var(--position) - 1)));
+}
 }
 /*------------------
 THE RESPONSIVE TO 768
