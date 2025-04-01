@@ -413,7 +413,7 @@ top: 0;
 left: 100%;
 width: 350px;
 height: 100%;
-background-color: red;
+background-color: transparent;
 animation: run 8s linear infinite;
 animation-delay: calc((8s / 4 * (var(--position) - 1)));
 }
@@ -452,7 +452,7 @@ THE RESPONSIVE TO 320
         display: none;
     }
     #about .welline .weli{
-        animation-delay: calc((8s / 1 * (var(--position) - 1)));
+        animation-delay: calc((8s / 2 * (var(--position) - 1)));
     }
 }
 /*------------------
