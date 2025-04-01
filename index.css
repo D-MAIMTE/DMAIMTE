@@ -499,7 +499,7 @@ animation-delay: calc((8s / 4 * (var(--position) - 1)));
 /*------------------
 THE RESPONSIVE TO 320
 -----------------*/
-@media (max-width: 320px){
+@media (max-width: 600px){
 
     #home .intro .hiji #mehu{
         display: none;
