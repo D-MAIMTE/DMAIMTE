@@ -220,6 +220,22 @@ header .logo img{
     align-items: center;
     justify-content: space-between;
 }
+#home .intro .buttonji{
+    width: 100%;
+    height: 29%;
+    background-image: url(backorange.png);
+    background-size: cover;
+    background-position: center;
+    border: 10px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home .intro .buttonji h1{
+    font-family: "Smooch Sans", sans-serif;
+    font-size: 35px;
+    font-weight: 600;  
+}
 #home .intro .hiji{
     width: 100%;
     height: 70%;
@@ -231,14 +247,6 @@ header .logo img{
     align-items: center;
     justify-content: center;
     position: relative;
-}
-#home .intro .hiji h1{
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 50%;
-    background-color: transparent;
-    font-size: 30px;
 }
 #home .intro .hiji #mehu{
     background-color: transparent;
@@ -331,14 +339,7 @@ header .logo img{
     }
     
 }
-#home .intro .buttonji{
-    width: 100%;
-    height: 29%;
-    background-image: url(backorange.png);
-    background-size: cover;
-    background-position: center;
-    border: 10px solid #fff;
-}
+
 #home .image{
     height: 90vh;
     width: 45%;
@@ -353,8 +354,8 @@ header .logo img{
     overflow: hidden;
 }
 #home .image h1{
-    height: 0px;
-    width: 0px;
+    height: auto;
+    width: 150px;
     background-color: transparent;
     position: absolute;
     left: 140px;
@@ -367,7 +368,7 @@ header .logo img{
 #home .image:hover h1{
     height: auto;
     width: 150px;
-    background-color: transparent;
+    background-color: yellow;
     position: absolute;
     left: 10px;
 }
@@ -453,13 +454,18 @@ animation-delay: calc((8s / 4 * (var(--position) - 1)));
     justify-content: center;
 }
 #about .introduction .name h1{
-    font-size: 30px;
-    font-weight: 100;
-    background-color: red;
-    width: 50%;
-    position: absolute;
+    font-family: "Smooch Sans", sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    background-color: transparent;
+    width: 200px;
+    height: auto;
+    position:absolute;
     bottom: 10px;
     left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 #about .introduction .photo{
     position: absolute;
@@ -470,6 +476,12 @@ animation-delay: calc((8s / 4 * (var(--position) - 1)));
     background-position: center;
     background-color: red;
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 76% 100%);
+}
+#about .introduction .photo img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 70%;
 }
 #about .skillset{
     max-width: 40vw;
@@ -485,9 +497,9 @@ animation-delay: calc((8s / 4 * (var(--position) - 1)));
 
 
 /*------------------
-THE RESPONSIVE TO 200
+THE RESPONSIVE TO 320
 -----------------*/
-@media (min-width: 200px){
+@media (max-width: 320px){
 
     #home .intro .hiji #mehu{
         display: none;
@@ -510,18 +522,18 @@ THE RESPONSIVE TO 200
 
 
 /*------------------
-THE RESPONSIVE TO 200
+THE RESPONSIVE TO 320
 -----------------*/
 
 
 /*------------------
 THE RESPONSIVE TO 768
 -----------------*/
-@media (min-width: 480px){
+@media (min-width: 768px){
 
 /*THE HOME SECTION*/
 #home .intro .hiji #mehu{
-    display: none;
+    display: flex;
 }
 #home .image h1{
     display: none;
@@ -546,7 +558,7 @@ THE RESPONSIVE TO 768
 /*------------------
 THE RESPONSIVE TO 769
 -----------------*/
-@media (min-width: 769px){
+@media (min-width: 769px) and (max-width: 991px){
 /*THE HOME SECTION*/
 
 /*THE HOME SECTION IS DONE*/
@@ -555,14 +567,3 @@ THE RESPONSIVE TO 769
 THE RESPONSIVE TO 769
 -----------------*/
 
-/*------------------
-THE RESPONSIVE TO 1200
------------------*/
-@media (max-width: 1200px){
-    /*THE HOME SECTION*/
-    
-    /*THE HOME SECTION IS DONE*/
-    }
-    /*------------------
-    THE RESPONSIVE TO 1200
-    -----------------*/
