@@ -529,7 +529,7 @@ THE RESPONSIVE TO 320
 /*------------------
 THE RESPONSIVE TO 768
 -----------------*/
-@media (min-width: 768px){
+@media (min-width: 601px){
 
 /*THE HOME SECTION*/
 #home .intro .hiji #mehu{
@@ -543,8 +543,8 @@ THE RESPONSIVE TO 768
     animation-delay: calc((8s / 2 * (var(--position) - 1)));
 }
 #about .introduction{
-    min-width: 50vw;
-    max-width: 50vw;
+    min-width: 45vw;
+    max-width: 45vw;
 }
 #about .skillset{
     min-width: 45vw;
