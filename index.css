@@ -232,10 +232,12 @@ header .logo img{
 }
 #home .intro .buttonji video{
     position: absolute;
-    width: 100%;
+    height: auto;
+    min-width: 100%;
 }
 #home .intro .buttonji h1{
-    background-color: #000;
+    background-color: transparent;
+    backdrop-filter: grayscale(100%);
     padding: 1px 5px;
     border-radius: 5px;
     position: absolute;
@@ -437,7 +439,6 @@ animation-delay: calc((8s / 4 * (var(--position) - 1)));
     display: flex;
     opacity: 0;
     transition: 0.8s;
-   
 }
 
 #about .introduction .name{
@@ -549,12 +550,16 @@ animation-delay: calc((8s / 4 * (var(--position) - 1)));
 /*------------------
 THE RESPONSIVE TO 320
 -----------------*/
-@media (max-width: 600px){
+@media (min-width: 200px) and (max-width: 600px){
 
     #home .intro .hiji #mehu{
         display: none;
     }
-   
+    #home .intro .buttonji video{
+        position: absolute;
+        height: 100%;
+        width: auto;
+    }
     #about .welline .weli{
         animation-delay: calc((8s / 2 * (var(--position) - 1)));
     }
