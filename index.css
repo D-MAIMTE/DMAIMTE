@@ -223,15 +223,22 @@ header .logo img{
 #home .intro .buttonji{
     width: 100%;
     height: 29%;
-    background-image: url(backorange.png);
-    background-size: cover;
-    background-position: center;
     border: 10px solid #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+#home .intro .buttonji video{
+    position: absolute;
+    width: 100%;
 }
 #home .intro .buttonji h1{
+    background-color: #000;
+    padding: 1px 5px;
+    border-radius: 5px;
+    position: absolute;
     font-family: "Smooch Sans", sans-serif;
     font-size: 35px;
     font-weight: 600;  
@@ -353,25 +360,6 @@ header .logo img{
     position: relative;
     overflow: hidden;
 }
-#home .image h1{
-    height: auto;
-    width: 150px;
-    background-color: transparent;
-    position: absolute;
-    left: 140px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.5s;
-    overflow: hidden;
-}
-#home .image:hover h1{
-    height: auto;
-    width: 150px;
-    background-color: yellow;
-    position: absolute;
-    left: 10px;
-}
 #home .image img{
     position: absolute;
     bottom: 0px;
@@ -397,7 +385,7 @@ header .logo img{
     background-image: url(backgreen.webp);
     background-size: cover;
     background-position: center;
-    border: 10px solid #fff;
+    border: 8px solid #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -435,12 +423,23 @@ animation-delay: calc((8s / 4 * (var(--position) - 1)));
     max-width: 50vw;
     height: 90vh;
     background-color: #fff;
+    border: 3px solid #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
     position: relative;
+    overflow: hidden;
 }
+#about .introduction video{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    opacity: 0;
+    transition: 0.8s;
+   
+}
+
 #about .introduction .name{
     position: absolute;
     height: 98%;
@@ -452,6 +451,7 @@ animation-delay: calc((8s / 4 * (var(--position) - 1)));
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.4s;
 }
 #about .introduction .name h1{
     font-family: "Smooch Sans", sans-serif;
@@ -474,22 +474,72 @@ animation-delay: calc((8s / 4 * (var(--position) - 1)));
     background-image: url(backgreen.webp);
     background-size: cover;
     background-position: center;
-    background-color: red;
+    background-color: transparent;
     clip-path: polygon(20% 0, 100% 0, 100% 100%, 76% 100%);
+    transition: 0.4s;
+}
+#about .introduction .photo h1{
+    font-family: "Smooch Sans", sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    background-color: transparent;
+    width: 200px;
+    height: auto;
+    position:absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#about .introduction:hover video{
+    display: flex;
+    opacity: 1;
+}
+#about .introduction:hover .name{
+    clip-path: polygon(0% 85%, 40% 83%, 60% 100%, 0 100%);
+}
+#about .introduction:hover .photo{
+    clip-path: polygon(0% 85%, 40% 88%, 60% 100%, 0 100%);
 }
 #about .introduction .photo img{
     position: absolute;
+    background-color: transparent;
     right: 0;
     bottom: 0;
     height: 70%;
 }
 #about .skillset{
-    max-width: 40vw;
+    max-width: 30vw;
     height: 90vh;
-    background-color: #fff;
+    background-image: url(animebg.jpeg);
+    background-size: cover;
+    background-position: center;
+    border: 8px solid #fff;
+    padding: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
 }
-/*THE ABOUT SECTION IS DONE*/
+#about .skillset h1{
+    font-family: "Smooch Sans", sans-serif;
+    font-size: 35px;
+    backdrop-filter: grayscale(100%);
+    width: 30%;
+}
+#about .skillset p{
+    font-family: cursive;
+    font-size: 25px;
+    padding: 5px;
+    width: 95%;
+    color: #fff;
+    backdrop-filter: grayscale(100%);
+}
 
+
+/*THE ABOUT SECTION IS DONE*/
 
 
 
@@ -504,9 +554,7 @@ THE RESPONSIVE TO 320
     #home .intro .hiji #mehu{
         display: none;
     }
-    #home .image h1{
-        display: none;
-    }
+   
     #about .welline .weli{
         animation-delay: calc((8s / 2 * (var(--position) - 1)));
     }
@@ -517,6 +565,9 @@ THE RESPONSIVE TO 320
     #about .skillset{
         min-width: 100vw;
         max-width: 100vw;
+    }
+    #about .introduction .photo img{
+        right: -10%;
     }
 }
 
@@ -535,19 +586,17 @@ THE RESPONSIVE TO 768
 #home .intro .hiji #mehu{
     display: flex;
 }
-#home .image h1{
-    display: none;
-}
+
 /*THE HOME SECTION IS DONE*/
 #about .welline .weli{
     animation-delay: calc((8s / 2 * (var(--position) - 1)));
 }
 #about .introduction{
-    min-width: 45vw;
-    max-width: 45vw;
+    min-width: 50vw;
+    max-width: 50vw;
 }
 #about .skillset{
-    min-width: 45vw;
+    min-width: 40vw;
     max-width: 45vw;
 }
 }
@@ -562,6 +611,14 @@ THE RESPONSIVE TO 769
 /*THE HOME SECTION*/
 
 /*THE HOME SECTION IS DONE*/
+#about .introduction{
+    min-width: 50vw;
+    max-width: 50vw;
+}
+#about .skillset{
+    min-width: 50vw;
+    max-width: 50vw;
+}
 }
 /*------------------
 THE RESPONSIVE TO 769
