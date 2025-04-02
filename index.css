@@ -538,11 +538,13 @@ animation-delay: calc((8s / 4 * (var(--position) - 1)));
     color: #fff;
     backdrop-filter: grayscale(100%);
 }
-
-
 /*THE ABOUT SECTION IS DONE*/
 
-
+/*THE PROJECTS SECTION*/
+#project{
+    width: 100vw;
+}
+/*THE PROJECTS SECTION IS DONE*/
 
 
 
