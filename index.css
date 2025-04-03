@@ -643,6 +643,136 @@ animation-delay: calc((8s / 5 * (var(--position) - 1)));
 }
 /*THE PROJECTS SECTION IS DONE*/
 
+/*THE CONTECT SECTION*/
+#contect{
+    height: auto;
+    width: 100vw;
+    background-color: transparent;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#contect h1{
+    width: 100%;
+    height: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    background-image: url(animebg.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contect form{
+    height: 60vh;
+    width: 320px;
+    background-color: transparent;
+    position: relative;
+}
+#contect form .item{
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contect form .item input{
+    height: 90%;
+    width: 90%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+#contect form .submit{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#contect form .submit button{
+    position: absolute;
+    height: 40px;
+    width: 90px;
+    background-image: url(backmulticolor.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+#contect form .submit button h2{
+    background-color: transparent;
+    -webkit-text-stroke: 1px #000;
+    font-size: 2em;
+}
+#contect .myinfo{
+    height: 60vh;
+    width: 320px;
+    background-color: transparent;
+}
+#contect .myinfo .item{
+    width: 100%;
+    height: 30%;
+    background-color: transparent;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow-x: hidden;
+}
+#contect .myinfo .item h3{
+    width: 70%;
+    position: relative;
+    right: 0px;
+    font-size: 1em;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    mix-blend-mode: difference;
+    transition: 0.5s;
+}
+#contect .myinfo .item img{
+    height: auto;
+    width: 30%;
+    transform: translateX(-100%);
+    position: relative;
+    display: flex;
+    left: 0px;
+    transition: 0.5s;
+}
+#contect .myinfo .item:hover{
+border-bottom: 1px solid #fff;
+}
+#contect .myinfo .item:hover img{
+    display: flex;
+    transform: translateX(0%);
+}
+/*THE CONTECT SECTION IS DONE*/
+
+/*THE FOOTER SECTION*/
+footer{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+footer h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 100;
+}
+/*THE FOOTER SECTION IS DONE*/
 
 /*THIS IS THE PARTITION FOR THE CSS, UNDERSTANTING THE STYLE, THE RESPONSIV SCREEN IS STRATING FROM HERE*/
 
