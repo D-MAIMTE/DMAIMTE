@@ -149,55 +149,94 @@ header .logo img{
 /*THE HAMBURGER IS DONE*/
 
 /*THE NAVBAR SECTION*/
-#menu{
+
+#menucontainer{
     position: fixed;
+    top: 0px;
     right: -100%;
-    width: 200px;
-    height: 150px;
-    clip-path: polygon(11% 0, 99% 6%, 96% 92%, 0 100%);
-    background-image: url(backyellow.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
     z-index: 1000;
-}
-#menu ul{
-    background-color: transparent;
-    height: 90%;
-    width: 90%;
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    position: relative;
+    flex-wrap: wrap;
+    overflow-x: hidden;
 }
-#menu ul a{
-    text-decoration: none;
-    width: 100%;
-    height: 50px;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#menu ul a li{
-    list-style: none;
-    width: 100%;
+#menucontainer .text{
     height: 100%;
-    background-color: transparent;
+    width: 35%;
+    background-color: blue;
+}
+#menucontainer .themenu{
+    height: 100%;
+    width: 65%;
+    background-color: #fff;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#menu ul a li h1{
+#menucontainer .themenu .home{
+    height: 80%;
+    width: 112px;
+    background-color: transparent;
     position: absolute;
-    font-family: cursive;
-    font-size: 14px;
-    font-weight: 600;
+    bottom: 8%;
+    right: 178px;
+    transform: rotate(0deg) translateX(-23px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+#menucontainer .themenu .home img{
+    height: 100%;
+}
+#menucontainer .themenu .about{
+    height: 80%;
+    width: 94px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 8%;
+    right: 178px;
+    transform: rotate(2deg) translateX(-14px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menucontainer .themenu .about img{
+    height: 100%;
+}
+#menucontainer .themenu .project{
+    height: 80%;
+    width: 79px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 8%;
+    right: 99px;
+    transform: rotate(0deg) translateX(-5.5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menucontainer .themenu .project img{
+    height: 100%;
+}
+#menucontainer .themenu .contect{
+    height: 80%;
+    width: 79px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 8%;
+    right: 20px;
+    transform: rotate(-1.5deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menucontainer .themenu .contect img{
+    height: 100%;
+}
+
 /*THE NAVBAR SECTION IS DONE*/
 
 /*THE HOME SECTION*/
@@ -549,6 +588,17 @@ animation-delay: calc((8s / 5 * (var(--position) - 1)));
     backdrop-filter: grayscale(100%);
     justify-self: center;
 }
+#about .skillset #moreme{
+    height: 30px;
+    width: 60px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+#about .skillset #moreme h4{
+    font-size: 1.5em;
+    mix-blend-mode: difference;
+}
 /*THE ABOUT SECTION IS DONE*/
 
 /*THE PROJECTS SECTION*/
@@ -781,8 +831,35 @@ THE RESPONSIVE TO 320
 -----------------*/
 @media (min-width: 200px) and (max-width: 600px){
 
-    #home .intro .hiji #mehu{
+        #menucontainer .themenu{
+        width: 100%;
+    }
+    #menucontainer .text{
+        height: 100%;
+        width: 35%;
+        background-color: blue;
         display: none;
+    }
+    #menucontainer .themenu .home{
+        height: 50%;
+        width: 60px;
+        right: 290px;
+    }
+    #menucontainer .themenu .about{
+        height: 50%;
+        width: 94px;
+        right: 173px;
+        transform: rotate(2deg) translateX(-10px);
+    }
+    #menucontainer .themenu .project{
+        height: 50%;
+        width: 25px;
+        right: 119px;
+    }
+    #menucontainer .themenu .contect{
+        height: 50%;
+        width: 39px;
+        right: 30px;
     }
     #home .intro .buttonji video{
         position: absolute;
