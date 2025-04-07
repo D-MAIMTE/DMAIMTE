@@ -179,7 +179,10 @@ header .logo img{
     position: absolute;
     left: 20px;
     bottom: 20px;
-    color: #fff;
+    font-size: 7em;
+    font-family: 'Times New Roman', Times, serif;
+    color: transparent;
+    -webkit-text-stroke: 0.01em #fff;
     mix-blend-mode: difference;
 }
 #menucontainer .themenu .home{
