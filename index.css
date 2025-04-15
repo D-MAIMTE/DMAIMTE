@@ -167,6 +167,9 @@ header .logo img{
     height: 100%;
     width: 100%;
     background-color: #fff;
+    background-image: url(Anime\ style\ night\ forest.jpeg);
+    background-size: cover;
+    background-position: center;
     position: relative;
     display: flex;
     align-items: center;
@@ -178,7 +181,7 @@ header .logo img{
     background-color: transparent;
     position: absolute;
     left: 20px;
-    bottom: 20px;
+    top: 20px;
     font-size: 7em;
     font-family: 'Times New Roman', Times, serif;
     color: transparent;
@@ -572,8 +575,8 @@ animation-delay: calc((8s / 5 * (var(--position) - 1)));
 }
 #about .introduction .photo img{
     position: absolute;
-    background-color: transparent;
-    right: 0;
+    background-color: red;
+    right: -10%;
     bottom: 0;
     height: 70%;
 }
@@ -864,9 +867,6 @@ THE RESPONSIVE TO 320
 #menucontainer .themenu .home{
     height: 45%;
     width: 112px;
-    background-image: url(home.png);
-    background-position: center;
-    background-size: cover;
     bottom: 8%;
     right: 287px;
     transform: rotate(0deg);
@@ -875,9 +875,6 @@ THE RESPONSIVE TO 320
 #menucontainer .themenu .about{
     height: 45%;
     width: 94px;
-    background-image: url(about.png);
-    background-position: center;
-    background-size: cover;
     bottom: 8%;
     right: 189px;
     transform: rotate(1deg);
@@ -886,9 +883,6 @@ THE RESPONSIVE TO 320
 #menucontainer .themenu .project{
     height: 45%;
     width: 79px;
-    background-image: url(project.png);
-    background-position: center;
-    background-size: cover;
     bottom: 8%;
     right: 105px;
     transform: rotate(0deg);
@@ -897,9 +891,6 @@ THE RESPONSIVE TO 320
 #menucontainer .themenu .contect{
     height: 45%;
     width: 79px;
-    background-image: url(contect.png);
-    background-position: center;
-    background-size: cover;
     bottom: 8%;
     right: 20px;
     transform: rotate(-1.5deg);
