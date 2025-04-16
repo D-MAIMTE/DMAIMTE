@@ -157,7 +157,7 @@ header .logo img{
     z-index: 1000;
     height: 100vh;
     width: 100vw;
-    background-color: red;
+    background-color: transparent;
     display: flex;
     flex-wrap: wrap;
     overflow-x: hidden;
@@ -575,7 +575,7 @@ animation-delay: calc((8s / 5 * (var(--position) - 1)));
 }
 #about .introduction .photo img{
     position: absolute;
-    background-color: red;
+    background-color: transparent;
     right: -10%;
     bottom: 0;
     height: 70%;

@@ -4,8 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=Great+Vibes&family=Jaini&family=Kaushan+Script&family=Lugrasimo&family=Noto+Sans+Newa&family=Platypi:ital,wght@0,300..800;1,300..800&family=Playwrite+IN:wght@100..400&family=Smooch+Sans:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            color: #fff;
+        }
+        ::-webkit-scrollbar{
+          display: none;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+           background-image: url(design-space-paper-textured-background_53876-42776.avif);
+           background-position: center;
+           background-size: cover;
+        }
+        .container P{
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            z-index: 1000;
+            color: #000;
+        }
+        .container .slog{
+            position: absolute;
+            top: 100px;
+            height: 80%;
+            width: 100%;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container .slog h1{
+            font-size: 10rem;
+            font-weight: 100;
+            background-color: transparent;
+            font-family: "Anton", sans-serif;
+            text-transform: uppercase;
+            transform: scaleY(2);
+        }
+        .container .imga{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+            width: auto;
+        }
+        .container .imga img{
+            height: 100%;
+        }
+        .container .merebareme{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            bottom: 30px;
+            right: 20px;
+        }
+        .container .merebareme h2{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1em;
+            color: #fff;
+            mix-blend-mode: difference;
+        }
+        .container .name{
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container .name h1{
+            font-size: 1em;
+            color: #000;
+        }
+        @media (min-width: 200px) and (max-width: 600px) {
+            .container .slog h1{
+            font-size: 7.5rem;
+            font-weight: 100;
+            font-family: "Anton", sans-serif;
+            text-transform: uppercase;
+            transform: scaleY(2.5);
+        }
+        .container .merebareme{
+            height: 300px;
+            width: 100vw;
+            background-color: transparent;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            padding: 5px;
+            text-align: center;
+        }
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+    <P>PASSIONATE ABOUT WEAVING DREAMS INTO FASHION.</P>
+    <div class="slog"><h1>ABOUT ME</h1></div>
+    <div class="imga"><img src="okgoodto.png" alt=""></div>
+    <div class="merebareme"><h2>I'm Deepak Maimte, a BCA student with sharp mind fopr tech and a strong desire to grow - not just academically, but personally too.
+        I believe that being successful is great, but becoming a true gentleman is the real goal.
+        From writhing code to exploring classic fashion, I'm someone who's always evolving. I'm passinate about self-improvment, building meaningful skills, and leveling up in every aspect of life.
+        For me, life is not just about chasing goals - it's about doing it with class, confidence, and character.
+    </h2></div>
+    <div class="name"><h1>DEEPAK MAIMTE</h1></div>
+    </div>
 </body>
 </html>
